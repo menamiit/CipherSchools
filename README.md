@@ -9,7 +9,7 @@
    Ans -> I will make use of Props to pass these values from parent component.
    
    e.g.
-   ```js <ComponentName brand='Porsche', model='911'/>```
+   ```js <ProductCart brand='Samsung', model='S26'/>```
 
    
    *Each product has a "Like" button that toggles between "Liked ❤️" and "Like 🤍."*
@@ -70,10 +70,8 @@
 
 5. How will you protect this route to restrict unauthenticated access?
 
-   Ans -> I’d protect the "Checkout" route using React Router. I’d create a PrivateRoute component that checks if the user is authenticated (maybe from a context or global state). If not logged in, it redirects to login.
-   ```js
-   <Route path="/checkout" element={
-     isLoggedIn ? <Checkout /> : <Navigate to="/login" />
-   } />
-   
-   ```
+   Ans -> To protect the "Checkout" page and restrict it to logged-in users, I would implement route guarding using React Router. This involves checking the user's authentication status before allowing access to certain routes.
+
+I would create a custom component that wraps protected routes. Inside this component, I’d use either context or global state to determine if the user is authenticated. If the user is not logged in, they would be redirected to the login page instead of being allowed to access the checkout route.
+
+This approach makes sure that only authenticated users can view or interact with sensitive pages like Checkout, improving security.
