@@ -5,7 +5,8 @@
    *You have a ProductCard component that displays a product’s name and price.*
 
 1. How will you pass these values from the parent component?
-   I will make use of Props to pass these values from parent component.
+
+   <span style="color:green">I will make use of Props to pass these values from parent component.</span>
    
    e.g.
    ```js <ComponentName brand='Porsche', model='911'/>```
@@ -13,7 +14,7 @@
    
    *Each product has a "Like" button that toggles between "Liked ❤️" and "Like 🤍."*
 
-2. How will you implement this toggle using useState?
+3. How will you implement this toggle using useState?
 
    I’d use the useState hook inside ProductCard to toggle the like status. Something like:
 
@@ -29,7 +30,7 @@
 
    *There’s a search input at the top to filter products as the user types.*
 
-3. How will you manage this input using a controlled component approach?
+4. How will you manage this input using a controlled component approach?
 
    For search, I’d keep the input controlled by using useState in the parent component. For example:
    ```js
@@ -46,7 +47,7 @@
 
    *Your app supports light and dark themes.*
 
-4. How will you share the current theme across all components using useContext?
+5. How will you share the current theme across all components using useContext?
 
    I’d create a ThemeContext using createContext and wrap my app in a ThemeProvider. Inside any component, I’d use useContext(ThemeContext) to get the current theme and toggle function.
    ```js
