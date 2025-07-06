@@ -1,7 +1,8 @@
 ## CipherSchools-1
 **Q1. React Concepts Applied: E-Commerce App Scenario**
 *You're building an e-commerce web app.*
-   You have a ProductCard component that displays a product’s name and price.
+   
+   *You have a ProductCard component that displays a product’s name and price.*
 
 1. How will you pass these values from the parent component?
    I will make use of Props to pass these values from parent component.
@@ -10,7 +11,7 @@
    ```js <ComponentName brand='Porsche', model='911'/>```
 
    
-   Each product has a "Like" button that toggles between "Liked ❤️" and "Like 🤍."
+   *Each product has a "Like" button that toggles between "Liked ❤️" and "Like 🤍."*
 
 2. How will you implement this toggle using useState?
 
@@ -26,7 +27,7 @@
    ```
 
 
-   There’s a search input at the top to filter products as the user types.
+   *There’s a search input at the top to filter products as the user types.*
 
 3. How will you manage this input using a controlled component approach?
 
@@ -43,7 +44,7 @@
    ```
 
 
-   Your app supports light and dark themes.
+   *Your app supports light and dark themes.*
 
 4. How will you share the current theme across all components using useContext?
 
@@ -64,7 +65,7 @@
    ```
 
 
-   The "Checkout" page should only be accessible to logged-in users.
+   *The "Checkout" page should only be accessible to logged-in users.*
 
    5. How will you protect this route to restrict unauthenticated access?
 
