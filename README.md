@@ -5,9 +5,11 @@
 
 1. How will you pass these values from the parent component?
    I will make use of Props to pass these values from parent component.
+   
    e.g.
    ```js <ComponentName brand='Porsche', model='911'/>```
    
 *Each product has a "Like" button that toggles between "Liked ❤️" and "Like 🤍."*
+
 2. How will you implement this toggle using useState?
 
