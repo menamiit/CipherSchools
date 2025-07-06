@@ -8,7 +8,7 @@
    
    e.g.
    ```js <ComponentName brand='Porsche', model='911'/>```
-   <br>
+
    
 *Each product has a "Like" button that toggles between "Liked ❤️" and "Like 🤍."*
 
@@ -25,6 +25,7 @@
    </button>
    ```
 
+
 There’s a search input at the top to filter products as the user types.
 
 3. How will you manage this input using a controlled component approach?
@@ -40,6 +41,7 @@ There’s a search input at the top to filter products as the user types.
      placeholder="Search products..."
    />
    ```
+
 
 Your app supports light and dark themes.
 
@@ -60,6 +62,7 @@ Your app supports light and dark themes.
      );
    };
    ```
+
 
 The "Checkout" page should only be accessible to logged-in users.
 
