@@ -8,6 +8,7 @@
    
    e.g.
    ```js <ComponentName brand='Porsche', model='911'/>```
+   <br>
    
 *Each product has a "Like" button that toggles between "Liked ❤️" and "Like 🤍."*
 
