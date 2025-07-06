@@ -6,7 +6,7 @@
 
 1. How will you pass these values from the parent component?
 
-   <span style="color:green">I will make use of Props to pass these values from parent component.</span>
+   Ans -> I will make use of Props to pass these values from parent component.
    
    e.g.
    ```js <ComponentName brand='Porsche', model='911'/>```
@@ -14,9 +14,9 @@
    
    *Each product has a "Like" button that toggles between "Liked ❤️" and "Like 🤍."*
 
-3. How will you implement this toggle using useState?
+2. How will you implement this toggle using useState?
 
-   I’d use the useState hook inside ProductCard to toggle the like status. Something like:
+   Ans -> I’d use the useState hook inside ProductCard to toggle the like status. Something like:
 
    eg.
    ```js
@@ -30,9 +30,9 @@
 
    *There’s a search input at the top to filter products as the user types.*
 
-4. How will you manage this input using a controlled component approach?
+3. How will you manage this input using a controlled component approach?
 
-   For search, I’d keep the input controlled by using useState in the parent component. For example:
+   Ans -> For search, I’d keep the input controlled by using useState in the parent component. For example:
    ```js
    const [searchTerm, setSearchTerm] = useState("");
 
@@ -47,9 +47,9 @@
 
    *Your app supports light and dark themes.*
 
-5. How will you share the current theme across all components using useContext?
+4. How will you share the current theme across all components using useContext?
 
-   I’d create a ThemeContext using createContext and wrap my app in a ThemeProvider. Inside any component, I’d use useContext(ThemeContext) to get the current theme and toggle function.
+   Ans -> I’d create a ThemeContext using createContext and wrap my app in a ThemeProvider. Inside any component, I’d use useContext(ThemeContext) to get the current theme and toggle function.
    ```js
    const ThemeContext = createContext();
 
@@ -66,11 +66,11 @@
    ```
 
 
-   *The "Checkout" page should only be accessible to logged-in users.*
+*The "Checkout" page should only be accessible to logged-in users.*
 
-   5. How will you protect this route to restrict unauthenticated access?
+5. How will you protect this route to restrict unauthenticated access?
 
-   I’d protect the "Checkout" route using React Router. I’d create a PrivateRoute component that checks if the user is authenticated (maybe from a context or global state). If not logged in, it redirects to login.
+   Ans -> I’d protect the "Checkout" route using React Router. I’d create a PrivateRoute component that checks if the user is authenticated (maybe from a context or global state). If not logged in, it redirects to login.
    ```js
    <Route path="/checkout" element={
      isLoggedIn ? <Checkout /> : <Navigate to="/login" />
