@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="message">This is the element before change</h1>
+    <button onclick="changeText()">Click Me</button>
+    <script>
+        const changeText = () => {
+            document.getElementById("message").textContent = "The message has been changed!";
+        };
+    </script>
+</body>
+
+</html>
