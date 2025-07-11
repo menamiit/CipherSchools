@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Div Example</title>
+  <style>
+    .responsive-box {
+      width: 80%;
+      max-width: 500px;
+      min-width: 200px;
+      margin: 40px auto;
+      padding: 24px;
+      background: #f0f4f8;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: width 0.3s, font-size 0.3s;
+    }
+    @media (max-width: 600px) {
+      .responsive-box {
+        width: 95%;
+        font-size: 1rem;
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="responsive-box">
+    This is a responsive div.
+  </div>
+</body>
+</html>
