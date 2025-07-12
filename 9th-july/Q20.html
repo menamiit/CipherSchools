@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Update Message Example</title>
+</head>
+<body>
+  <div>
+    <input type="text" id="userInput" placeholder="Type something...">
+    <button id="updateBtn">Update Message</button>
+    <button id="clearBtn">Clear</button>
+  </div>
+  <p id="message">This is the original message.</p>
+
+  <script>
+    const input = document.getElementById('userInput');
+    const message = document.getElementById('message');
+    const updateBtn = document.getElementById('updateBtn');
+    const clearBtn = document.getElementById('clearBtn');
+
+    updateBtn.onclick = function() {
+      message.textContent = input.value;
+    };
+
+    clearBtn.onclick = function() {
+      input.value = '';
+      message.textContent = '';
+    };
+  </script>
+</body>
+</html>
