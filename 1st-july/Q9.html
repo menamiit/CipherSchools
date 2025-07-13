@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Navigation Example</title>
+</head>
+<body>
+  <ul id="myList">
+    <li id="firstItem">First</li>
+    <li>Second</li>
+    <li>Third</li>
+  </ul>
+  <script>
+    const firstItem = document.getElementById('firstItem');
+
+    // 1. parentNode
+    console.log('Parent node:', firstItem.parentNode);
+
+    // 2. childNodes
+    console.log('Child nodes of <ul>:', firstItem.parentNode.childNodes);
+
+    // 3. nextSibling 
+    console.log('Next sibling:', firstItem.nextSibling);
+  </script>
+</body>
+</html>
